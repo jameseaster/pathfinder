@@ -1,0 +1,16 @@
+.board {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  border: solid 1px #61dafb;
+  width: 5vh;
+  height: 5vh;
+}
