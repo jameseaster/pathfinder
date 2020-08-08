@@ -9,7 +9,20 @@ const generateMatrix = () => {
     if (i > 0 && i % 25 === 0) {
       row += 1;
     }
-    matrix[row].push(i);
+    let color = "teal";
+    if (i === 255) color = "navy";
+    if (i === 270) color = "red";
+
+    matrix[row].push({
+      id: i,
+      color,
+      wall: false,
+      start: false,
+      end: false,
+      searched: false,
+      value: Infinity,
+      prev: null,
+    });
   }
 
   return matrix;
