@@ -2,15 +2,32 @@
   text-align: center;
   background-color: #282c34;
   color: white;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.square {
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.node {
   border: solid 1px #61dafb;
-  width: 5vh;
-  height: 5vh;
+  background-color: white;
+  height: 3vh;
+  width: 3vw;
+}
+
+.node:hover {
+  background: #61dafb;
 }
