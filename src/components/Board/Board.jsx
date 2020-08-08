@@ -1,14 +1,13 @@
 import React from "react";
 import "./Board.css";
+import Row from "../Row";
 
-const Board = () => {
+const Board = ({ matrix }) => {
   return (
     <div className="board">
-      <div className="square"></div>
-      <div className="square"></div>
-      <div className="square"></div>
-      <div className="square"></div>
-      <div className="square"></div>
+      {matrix.map((row, index) => (
+        <Row row={row} key={index} />
+      ))}
     </div>
   );
 };
