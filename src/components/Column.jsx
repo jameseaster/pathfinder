@@ -3,7 +3,7 @@ import Node from "./Node";
 const Column = ({ col }) => {
   return (
     <div className="column">
-      <Node name={col} />
+      <Node node={col} />
     </div>
   );
 };
