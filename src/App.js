@@ -2,9 +2,11 @@ import React from "react";
 
 import Menu from "./components/Menu/Menu";
 import Board from "./components/Board/Board";
-import generateMatrix from "./Matrix";
+import generateMatrix from "./matrix";
+
+const matrix = generateMatrix();
+
 function App() {
-  const matrix = generateMatrix();
   return (
     <div>
       <Menu />
