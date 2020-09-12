@@ -10,15 +10,23 @@ const generateMatrix = () => {
       row += 1;
     }
     let color = "teal";
-    if (i === 255) color = "navy";
-    if (i === 270) color = "red";
+    let end = false;
+    let start = false;
+    if (i === 255) {
+      start = true;
+      color = "navy";
+    }
+    if (i === 260) {
+      end = true;
+      color = "red";
+    }
 
     matrix[row].push({
       id: i,
       color,
       wall: false,
-      start: false,
-      end: false,
+      start,
+      end,
       searched: false,
       value: Infinity,
       prev: null,

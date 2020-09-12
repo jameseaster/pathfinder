@@ -31,9 +31,9 @@ function surroundingNodes(id, matrix, queue) {
 
   // TODO: make sure these values exist
   let top = matrix[Math.floor(id / height) - 1][id % width];
-  let right = matrix[Math.floor(id / height)][id + 1];
+  let right = matrix[Math.floor(id / height)][(id % width) + 1];
   let bottom = matrix[Math.floor(id / height) + 1][id % width];
-  let left = matrix[Math.floor(id / height)][id - 1];
+  let left = matrix[Math.floor(id / height)][(id % width) - 1];
 
   const neighbors = [top, right, bottom, left];
   // iterate over nodes
